@@ -7,12 +7,14 @@
     tools:context=".CheckerActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textViewChecker"
         android:layout_width="196dp"
         android:layout_height="35dp"
-        android:text="Vaccine Checker"
+        android:layout_marginTop="16dp"
+        android:text="@string/checker"
         android:textSize="24dp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="107dp"
-        tools:layout_editor_absoluteY="16dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
