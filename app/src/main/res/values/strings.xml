@@ -10,4 +10,5 @@
     <string name="view_recycler"> View Customers</string>
 
     <string name="checker">Vaccine Checker</string>
+    <string name="read">Read Image</string>
 </resources>
