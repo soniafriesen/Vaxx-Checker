@@ -39,6 +39,8 @@ class CheckerActivity : AppCompatActivity() {
             }
     }
 
+
+
     fun onReadImage(view: View) {
         // setup the textView to display text found
         var textView: TextView = findViewById(R.id.textViewIDContent)
@@ -53,7 +55,13 @@ class CheckerActivity : AppCompatActivity() {
 
         val result = recognizer.process(image)
             .addOnSuccessListener { visionText ->
-                textView.setText(visionText.text)
+
+                val converttext: String = visionText.text.toString();
+
+                //delimiters not working properly, will probably need a REGEX exp to extract just the name
+                val delimitedtext = converttext.split("NOM", ignoreCase = false, limit = 0 ).last()
+
+                textView.setText(delimitedtext)
                 // Task completed successfully
                 // ...
             }
