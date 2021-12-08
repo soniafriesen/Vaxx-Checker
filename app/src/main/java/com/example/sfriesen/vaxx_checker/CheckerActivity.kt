@@ -63,7 +63,7 @@ class CheckerActivity : AppCompatActivity() {
                 val delimitedtext: Array<String> =converttext.split("\n").toTypedArray()
                 val person = Person(delimitedtext[5],delimitedtext[4],delimitedtext[6],delimitedtext[7],delimitedtext[12])
                 people.add(person)
-                textView.setText(people[0].firstname)
+                textView.setText(people[0].firstname + " " + people[0].lastname)
                 // Task completed successfully
                 // ...
             }

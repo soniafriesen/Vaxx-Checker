@@ -20,8 +20,8 @@
 
     <ImageView
         android:id="@+id/imageViewQR"
-        android:layout_width="146dp"
-        android:layout_height="112dp"
+        android:layout_width="282dp"
+        android:layout_height="224dp"
         android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -38,8 +38,8 @@
 
     <ImageView
         android:id="@+id/imageViewID"
-        android:layout_width="127dp"
-        android:layout_height="109dp"
+        android:layout_width="266dp"
+        android:layout_height="221dp"
         android:layout_marginTop="4dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -50,11 +50,13 @@
         android:id="@+id/button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:onClick="onReadImage"
         android:text="@string/read"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageViewID" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewIDContent" />
 
     <TextView
         android:id="@+id/textViewIDContent"
@@ -62,6 +64,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/imageViewID" />
 </androidx.constraintlayout.widget.ConstraintLayout>
