@@ -11,10 +11,11 @@ import com.google.mlkit.vision.common.InputImage
 import com.google.mlkit.vision.text.TextRecognition
 
 class CheckerActivity : AppCompatActivity() {
+    lateinit var people:ArrayList<Person>
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_checker)
-
+        people = ArrayList<Person>()
         // set the bitmap and textView
         var myBitmap: Bitmap = BitmapFactory.decodeResource(
             getApplicationContext().getResources(),
@@ -59,9 +60,10 @@ class CheckerActivity : AppCompatActivity() {
                 val converttext: String = visionText.text.toString();
 
                 //delimiters not working properly, will probably need a REGEX exp to extract just the name
-                val delimitedtext = converttext.split("NOM", ignoreCase = false, limit = 0 ).last()
-
-                textView.setText(delimitedtext)
+                val delimitedtext: Array<String> =converttext.split("\n").toTypedArray()
+                val person = Person(delimitedtext[5],delimitedtext[4],delimitedtext[6],delimitedtext[7],delimitedtext[12])
+                people.add(person)
+                textView.setText(people[0].firstname)
                 // Task completed successfully
                 // ...
             }
