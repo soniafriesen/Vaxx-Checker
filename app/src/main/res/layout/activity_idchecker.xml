@@ -3,8 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".CheckerActivity">
+    android:layout_height="match_parent">
 
     <TextView
         android:id="@+id/textViewChecker"
@@ -19,35 +18,37 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageViewQR"
-        android:layout_width="347dp"
-        android:layout_height="309dp"
+        android:id="@+id/imageViewID"
+        android:layout_width="376dp"
+        android:layout_height="244dp"
         android:layout_marginTop="68dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewChecker"
-        app:srcCompat="@drawable/smartqr" />
+        app:srcCompat="@drawable/johndoe" />
 
     <TextView
-        android:id="@+id/textViewContent"
+        android:id="@+id/textViewIDContent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageViewQR" />
+        app:layout_constraintTop_toBottomOf="@+id/imageViewID" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonReadImage"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:onClick="onQRScanner"
-        android:text="@string/QRReader"
+        android:layout_marginTop="136dp"
+        android:onClick="onReadImage"
+        android:text="@string/idReader"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewContent" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewIDContent"
+        app:layout_constraintVertical_bias="0.028" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -13,6 +13,9 @@
             android:name=".CheckerActivity"
             android:exported="false" />
         <activity
+            android:name=".IDActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

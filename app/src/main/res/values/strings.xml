@@ -9,6 +9,10 @@
     <string name="choose">Please pick an option</string>
     <string name="view_recycler"> View Customers</string>
 
+    <!---activity QR Scanner activity -->
     <string name="checker">Vaccine Checker</string>
-    <string name="read">Read Image</string>
+    <string name="QRReader">Scan QR</string>
+
+    <!---activity QR Scanner activity -->
+    <string name="idReader">Read ID</string>
 </resources>
