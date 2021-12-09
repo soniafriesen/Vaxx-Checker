@@ -26,9 +26,7 @@ class IDActivity : AppCompatActivity() {
             R.drawable.johndoe
         );
         val image = InputImage.fromBitmap(myBitmap, 0)
-
         val recognizer = TextRecognition.getClient()
-
         val result = recognizer.process(image)
             .addOnSuccessListener { visionText ->
 
@@ -50,7 +48,7 @@ class IDActivity : AppCompatActivity() {
             }
             .addOnFailureListener { e ->
                 // Task failed with an exception
-                textView.setText("Task Failed")
+                textView.setText("Unable to read")
             }
     }
 }

@@ -1,18 +1,13 @@
 <resources>
     <string name="app_name">Vaxx-Checker</string>
     <string name="start">Start Checker</string>
-    <string name="coders">Sonia Friesen 0813682 and Roberto Davies-Amaral 0754573 </string>
+    <string name="coders">Sonia Friesen 0813682 and Roberto Davies-Amaral 0754573</string>
 
-    <!---options activity -->
-    <string name="button_QRScanner">QR Scanner</string>
-    <string name="text_scanner">Document Scanner</string>
-    <string name="choose">Please pick an option</string>
-    <string name="view_recycler"> View Customers</string>
-
-    <!---activity QR Scanner activity -->
+  <!---activity QR Scanner activity -->
     <string name="checker">Vaccine Checker</string>
     <string name="QRReader">Scan QR</string>
 
     <!---activity QR Scanner activity -->
     <string name="idReader">Read ID</string>
+
 </resources>

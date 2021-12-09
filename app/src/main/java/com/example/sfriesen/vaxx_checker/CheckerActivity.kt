@@ -10,15 +10,12 @@ import android.widget.TextView
 import android.widget.Toast
 import com.google.mlkit.vision.barcode.BarcodeScanning
 import com.google.mlkit.vision.common.InputImage
-import com.google.mlkit.vision.text.TextRecognition
 
 class CheckerActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_checker)
     }
-
-
 
     fun onQRScanner(view: View) {
         // set the bitmap and textView
