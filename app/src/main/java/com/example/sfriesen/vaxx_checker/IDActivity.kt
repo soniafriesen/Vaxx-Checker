@@ -1,5 +1,6 @@
 package com.example.sfriesen.vaxx_checker
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
@@ -45,6 +46,10 @@ class IDActivity : AppCompatActivity() {
                 textView.setText(people[0].firstname + " " + people[0].lastname)
                 // Task completed successfully
                 // ...
+
+                val intent = Intent(this, RecyclerViewActivity::class.java)
+                startActivity(intent)
+
             }
             .addOnFailureListener { e ->
                 // Task failed with an exception
