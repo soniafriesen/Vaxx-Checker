@@ -3,7 +3,7 @@
     <string name="start">Start Checker</string>
     <string name="coders">Sonia Friesen 0813682 and Roberto Davies-Amaral 0754573</string>
 
-  <!---activity QR Scanner activity -->
+    <!---activity QR Scanner activity -->
     <string name="checker">Vaccine Checker</string>
     <string name="QRReader">Scan QR</string>
 

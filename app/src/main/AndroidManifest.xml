@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Vaxxchecker">
         <activity
+            android:name=".RecyclerViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RecyclerActivity"
+            android:exported="false" />
+        <activity
             android:name=".CheckerActivity"
             android:exported="false" />
         <activity
@@ -24,6 +30,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <meta-data
             android:name="com.google.mlkit.vision.DEPENDENCIES"
             android:value="barcode" />

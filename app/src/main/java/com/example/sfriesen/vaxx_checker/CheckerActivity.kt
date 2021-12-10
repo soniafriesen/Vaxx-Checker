@@ -34,17 +34,19 @@ class CheckerActivity : AppCompatActivity() {
         val result = scanner.process(image)
             .addOnSuccessListener { barcodes ->
                 textView.setText("QR Scan Sucessfull")
-                Toast.makeText(this,"Valid QR Code", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this,"Valid QR Code", Toast.LENGTH_LONG)
                 val intent = Intent(this, IDActivity::class.java)
                 startActivity(intent)
                 // Task completed successfully
             }
             .addOnFailureListener {
                 // Task failed with an exception
-                textView.setText("Unable to scan, try again")
-                Toast.makeText(this,"Invalid QR Code", Toast.LENGTH_SHORT).show()
+                textView.setText("Failed to read QR")
+                Toast.makeText(this,"Invalid QR Code", Toast.LENGTH_LONG)
+                val intent = Intent(this, IDActivity::class.java)
+                startActivity(intent)
+
             }
 
     }
-
 }
