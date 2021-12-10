@@ -8,6 +8,9 @@ import android.view.View
 import android.widget.TextView
 import com.google.mlkit.vision.common.InputImage
 import com.google.mlkit.vision.text.TextRecognition
+import java.io.IOException
+import java.io.OutputStreamWriter
+import com.google.gson.Gson
 
 class IDActivity : AppCompatActivity() {
     lateinit var people:ArrayList<Person>
@@ -51,4 +54,18 @@ class IDActivity : AppCompatActivity() {
                 textView.setText("Unable to read, try again")
             }
     }
+    fun onSaveClick(view:View)
+    {
+        try {
+            val ofile = openFileOutput("people.json", MODE_PRIVATE)
+            val osw = OutputStreamWriter(ofile)
+            osw.write(Gson().toJson(people))
+            osw.flush()
+            osw.close()
+        } catch (ioe: IOException) {
+            ioe.printStackTrace()
+        }
+        //start intent
+    }
+
 }

@@ -9,5 +9,6 @@
 
     <!---activity QR Scanner activity -->
     <string name="idReader">Read ID</string>
+    <string name="view">View</string>
 
 </resources>
