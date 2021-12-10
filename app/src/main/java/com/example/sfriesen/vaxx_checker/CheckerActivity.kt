@@ -43,6 +43,9 @@ class CheckerActivity : AppCompatActivity() {
                 // Task failed with an exception
                 textView.setText("Failed to read QR")
                 Toast.makeText(this,"Invalid QR Code", Toast.LENGTH_LONG)
+                val intent = Intent(this, IDActivity::class.java)
+                startActivity(intent)
+
             }
 
     }
