@@ -48,7 +48,7 @@ class IDActivity : AppCompatActivity() {
             }
             .addOnFailureListener { e ->
                 // Task failed with an exception
-                textView.setText("Unable to read")
+                textView.setText("Unable to read, try again")
             }
     }
 }
