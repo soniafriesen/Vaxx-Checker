@@ -6,6 +6,7 @@
     <!---activity QR Scanner activity -->
     <string name="checker">Vaccine Checker</string>
     <string name="QRReader">Scan QR</string>
+    <string name="status">Status:</string>
 
     <!---activity QR Scanner activity -->
     <string name="idReader">Read ID</string>
