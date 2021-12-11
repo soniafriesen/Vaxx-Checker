@@ -27,7 +27,7 @@ class MyRecyclerAdapter(private val myDataset: ArrayList<Person>) :
             .inflate(R.layout.recycler_item_layout, parent, false) as View
         // set the view's size, margins, paddings and layout parameters
         val lp = view.layoutParams
-        lp.height = parent.measuredHeight/3
+        lp.height = parent.measuredHeight/8
         view.layoutParams = lp
         return MyViewHolder(view)
     }
@@ -42,7 +42,6 @@ class MyRecyclerAdapter(private val myDataset: ArrayList<Person>) :
         holder.view.findViewById<TextView>(R.id.textViewStreet).text = myDataset[position].streetName
         holder.view.findViewById<TextView>(R.id.textViewLocation).text = myDataset[position].location
         holder.view.findViewById<TextView>(R.id.textViewdob).text = myDataset[position].dob
-
     }
 
     // Return the size of your dataset (invoked by the layout manager)
