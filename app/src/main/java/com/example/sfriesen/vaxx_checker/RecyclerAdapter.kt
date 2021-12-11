@@ -37,11 +37,16 @@ class MyRecyclerAdapter(private val myDataset: ArrayList<Person>) :
         // - get element from your dataset at this position
         // - replace the contents of the view with that element
         // LW set the item to bind through view.textview
-        holder.view.findViewById<TextView>(R.id.textViewfname).text = myDataset[position].firstname
-        holder.view.findViewById<TextView>(R.id.textViewlname).text = myDataset[position].lastname
-        holder.view.findViewById<TextView>(R.id.textViewStreet).text = myDataset[position].streetName
-        holder.view.findViewById<TextView>(R.id.textViewLocation).text = myDataset[position].location
-        holder.view.findViewById<TextView>(R.id.textViewdob).text = myDataset[position].dob
+
+        holder.view.findViewById<TextView>(R.id.textViewfname).text = myDataset[position].firstname +
+                "\n" +
+        myDataset[position].lastname +
+                "\n" +
+        myDataset[position].streetName +
+                "\n" +
+        myDataset[position].location +
+                "\n" +
+        myDataset[position].dob + "\n"
     }
 
     // Return the size of your dataset (invoked by the layout manager)

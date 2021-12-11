@@ -51,7 +51,7 @@ class IDActivity : AppCompatActivity() {
                     delimitedtext[7],
                     delimitedtext[18]
                 )
-                textView.setText("Status: Read " +person.firstname + " " + person.lastname)
+                textView.setText("Status:" +person.firstname + " " + person.lastname + " read successfully")
                 people.add(person)
                 // Task completed successfully
                 // ...

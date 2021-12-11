@@ -1,6 +1,7 @@
 package com.example.sfriesen.vaxx_checker
 
 import android.content.Context
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -46,6 +47,8 @@ class RecyclerViewActivity : AppCompatActivity() {
     }
 
     fun onButtonReturn(view: View) {
+        val intent = Intent(this, MainActivity::class.java)
+        startActivity(intent)
         finish()
     }
     //Extra functions
