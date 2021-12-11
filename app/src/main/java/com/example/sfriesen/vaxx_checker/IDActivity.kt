@@ -62,13 +62,17 @@ class IDActivity : AppCompatActivity() {
             }
     }
     fun onSaveClick(view:View)    {
+        if(people.size != 0)
+        {
+            //write People Arraylist to file
+            writeToFile(this)
 
-        //write People Arraylist to file
-        writeToFile(this)
-
-        //start intent
-        val intent = Intent(this, RecyclerViewActivity::class.java)
-        startActivity(intent)
+            //start intent
+            val intent = Intent(this, RecyclerViewActivity::class.java)
+            startActivity(intent)
+        }
+        else
+            textView.setText("Status: Unable to view, read again")
     }
 
     fun writeToFile(context: Context)
