@@ -1,6 +1,7 @@
 package com.example.sfriesen.vaxx_checker
 
 import android.content.Context
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
@@ -66,6 +67,8 @@ class IDActivity : AppCompatActivity() {
         writeToFile(this)
 
         //start intent
+        val intent = Intent(this, RecyclerViewActivity::class.java)
+        startActivity(intent)
     }
 
     fun writeToFile(context: Context)

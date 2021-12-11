@@ -12,4 +12,8 @@
     <string name="idReader">Read ID</string>
     <string name="view">View</string>
 
+    <!---activity RecyclerView activity -->
+    <string name="title">Scanned Customers</string>
+    <string name="finish">Done</string>
+
 </resources>

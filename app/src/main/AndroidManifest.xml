@@ -13,9 +13,6 @@
             android:name=".RecyclerViewActivity"
             android:exported="false" />
         <activity
-            android:name=".RecyclerActivity"
-            android:exported="false" />
-        <activity
             android:name=".CheckerActivity"
             android:exported="false" />
         <activity
