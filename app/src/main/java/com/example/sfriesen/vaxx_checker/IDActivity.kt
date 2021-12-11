@@ -49,9 +49,10 @@ class IDActivity : AppCompatActivity() {
                     delimitedtext[4],
                     delimitedtext[6],
                     delimitedtext[7],
-                    delimitedtext[12]
+                    delimitedtext[18]
                 )
                 textView.setText("Status: Read " +person.firstname + " " + person.lastname)
+                people.add(person)
                 // Task completed successfully
                 // ...
             }
@@ -60,9 +61,8 @@ class IDActivity : AppCompatActivity() {
                 textView.setText("Status: Unable to read, try again")
             }
     }
-    fun onSaveClick(view:View)
-    {
-        people.add(person)
+    fun onSaveClick(view:View)    {
+
         //write People Arraylist to file
         writeToFile(this)
 
