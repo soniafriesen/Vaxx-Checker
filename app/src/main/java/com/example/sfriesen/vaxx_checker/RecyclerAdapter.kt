@@ -27,7 +27,7 @@ class MyRecyclerAdapter(private val myDataset: ArrayList<Person>) :
             .inflate(R.layout.recycler_item_layout, parent, false) as View
         // set the view's size, margins, paddings and layout parameters
         val lp = view.layoutParams
-        lp.height = parent.measuredHeight/8
+        lp.height = parent.measuredHeight/5
         view.layoutParams = lp
         return MyViewHolder(view)
     }
